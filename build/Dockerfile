@@ -12,8 +12,6 @@ RUN conda config --append channels cta-observatory
 RUN conda install --yes ctools
 
 
-#ENTRYPOINT ["tini", "-g", "--"]
-
 # Run app.py when the container launches
 CMD ["python", "./app.py"]
 
