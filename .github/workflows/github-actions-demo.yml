@@ -16,3 +16,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: which docker
+      - run: docker build -t michaelnlindsay/fin_gamma runner
