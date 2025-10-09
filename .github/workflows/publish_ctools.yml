@@ -1,6 +1,9 @@
 name: Publish CTA Data Pipeline Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   Publish-ctools-image:
     runs-on: ubuntu-latest
