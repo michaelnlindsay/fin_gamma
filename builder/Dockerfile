@@ -21,9 +21,9 @@ RUN /bin/bash /tmp/miniconda.sh -b -p /opt/conda && \
     rm /tmp/miniconda.sh && \
     echo "export PATH=/opt/conda/bin:$PATH" > /etc/profile.d/conda.sh
 
-RUN #conda update -y -n base conda
+RUN conda update -y -n base conda
 
-RUN conda env create -f environment.yml
+RUN conda env create -f /app/environment.yml
 
 RUN source activate cta_data_pipeline
 
