@@ -1,7 +1,7 @@
-name: myenv
+name: cta_data_pipeline
 channels:
   - conda-forge
   - cta-observatory
 dependencies:
-  - python=3.8
-  - flask
+  - python=3.11
+  - ctools
