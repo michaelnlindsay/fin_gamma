@@ -20,7 +20,7 @@ RUN /bin/bash /tmp/miniconda.sh -b -p /opt/conda && \
     rm /tmp/miniconda.sh && \
     echo "export PATH=/opt/conda/bin:$PATH" > /etc/profile.d/conda.sh \
 
-RUN conda update -n base conda \
+RUN conda update -y -n base conda \
     conda env create -f /app/environment.yml \
     source activate cta_data_pipeline
 
