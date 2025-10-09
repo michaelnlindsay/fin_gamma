@@ -1,6 +1,4 @@
-# fin_gamma
-
-
+# Quick Start
 ```shell
 cd runner
 docker build -t ctadp .
