@@ -5,6 +5,8 @@
 cd runner
 docker build -t ctadp .
 docker run ctadp
+
+docker run --rm -v $(pwd):/app -w /app python:latest python script.py<br>
 ```
 
 # References

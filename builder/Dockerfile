@@ -22,7 +22,7 @@ RUN /bin/bash /tmp/miniconda.sh -b -p /opt/conda && \
 
 RUN conda update -y -n base conda
 
-RUN conda env create -f environment.yml \
-    source activate cta_data_pipeline
+RUN conda env create -f environment.yml
 
+#RUN source activate cta_data_pipeline
 
