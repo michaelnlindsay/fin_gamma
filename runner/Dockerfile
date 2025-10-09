@@ -1,7 +1,11 @@
 FROM mrlindsay/fin_gamma:main
 
 
-COPY . .
+# Set the working directory
+WORKDIR /app
 
-# Run app.py when the container launches
-CMD ["python", "./app.py"]
+# Copy the current directory contents into the container
+COPY . /app
+
+# Specify the command to run the Python script
+CMD ["python", "script.py"]
